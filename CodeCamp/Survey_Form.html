@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" 
+      placeholder="Enter your Name "
+      id="name" 
+      name="name" 
+      required>
+      <br>
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" 
+      placeholder="Enter your Email"
+      id="email" 
+      name="email" 
+      required>
+      <br>
+
+      <label for="number" id="number-label">Age(optional)</label>
+      <input type="number" 
+      placeholder="Enter your Age"
+      id="number" 
+      name="number"
+      min="7"
+      max="100" 
+      >
+      <br>
+
+      <p>Who are you?</p>
+      <select id="dropdown" name="dropdown">
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="curious">Curious</option>
+      </select>
+      <br>
+
+      <p>Are you enjoying this?</p>    
+      <input type="radio" name="radio-choices" id="yes-option" value="yes"/>
+      <label for="yes-option" id="yes-label">Yes</label>
+
+      <input type="radio" name="radio-choices" id="no-option" value="no"/>
+      <label for="no-option" id="no-label">No</label>
+
+      <input type="radio" name="radio-choices" id="maybe-option" value="maybe"/>
+      <label for="maybe-option" id="maybe-label">Maybe</label>
+      
+      <p>Where are you going to use your learnings here?</p>
+            <input
+            type="checkbox"
+            id="personal"
+            name="choice"
+            value="personal"
+          />
+          <label for="personal">Personal</label>
+
+          <input
+            type="checkbox"
+            id="educational"
+            name="choice"
+            value="educational"
+          />
+          <label for="educational">Educational</label>
+      <br>
+
+      <label for="comments">Other Comments?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+      <button type="submit" id="submit" name="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
